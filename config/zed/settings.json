@@ -1,0 +1,135 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "edit_predictions": {
+    "provider": "copilot"
+  },
+  "diff_view_style": "split",
+  "languages": {
+    "PHP": {
+      "language_servers": ["intelephense", "phpcs", "!phpactor"],
+      "inlay_hints": {
+        "enabled": false,
+      },
+      "code_actions_on_format": {
+        "source.fixAll.phpcs": true,
+      },
+      "formatter": [],
+      "format_on_save": "on",
+    },
+  },
+  "lsp": {
+    "phpcs": {
+      "settings": {
+        "standard": "PSR12",
+      },
+    },
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "minimap": {
+    "show": "auto",
+  },
+  "status_bar": {
+    "show_active_file": false,
+  },
+  "agent_ui_font_size": 14.0,
+  "agent_buffer_font_size": 14.0,
+  "ui_font_family": "Cascadia Code",
+  "buffer_font_family": "Cascadia Mono",
+  "tab_bar": {
+    "show": true,
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": false,
+  },
+  "title_bar": {
+    "show_branch_status_icon": false,
+    "show_menus": false,
+  },
+  "proxy": "",
+  "terminal": {
+    "font_family": "CaskaydiaCove Nerd Font",
+    "shell": {
+      "program": "powershell.exe",
+    },
+  },
+  "project_panel": {
+    "hide_hidden": false,
+    "hide_root": true,
+    "diagnostic_badges": false,
+    "git_status_indicator": true,
+    "bold_folder_labels": false,
+    "file_icons": true,
+    "folder_icons": true,
+    "entry_spacing": "comfortable",
+    "hide_gitignore": false,
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-haiku-4.5",
+      "enable_thinking": true
+    },
+    "sidebar_side": "right",
+    "dock": "right",
+    "favorite_models": [
+      {
+        "provider": "copilot_chat",
+        "model": "claude-haiku-4.5",
+        "enable_thinking": true
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "gpt-5.2-codex",
+        "enable_thinking": true,
+        "effort": "high"
+      }
+    ],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "fallback_branch_name": "main",
+    "status_style": "label_color",
+    "default_width": 360.0,
+    "show_count_badge": true,
+    "diff_stats": true,
+    "folder_icons": true,
+    "file_icons": true,
+    "collapse_untracked_diff": false,
+    "sort_by_path": false,
+    "tree_view": false,
+    "dock": "left",
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "vim_mode": false,
+  "agent_servers": {
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+  },
+  "base_keymap": "VSCode",
+  "icon_theme": "Material Icon Theme",
+  "ui_font_size": 14.0,
+  "buffer_font_size": 12.0,
+  "theme": "Ayu Dark",
+}
